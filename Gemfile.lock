@@ -358,6 +358,7 @@ DEPENDENCIES
   capybara
   debug
   dotenv
+  i18n
   importmap-rails
   jbuilder
   kamal
