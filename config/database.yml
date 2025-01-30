@@ -15,8 +15,8 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: <%= ENV['username_flyfy'] %>
-  password: <%= ENV['password_flyfy']%>
+  username: 'flyfy' # <%= ENV['username_flyfy'] %>
+  password: '2402'  #<%= ENV['password_flyfy']%>
   host: localhost
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
