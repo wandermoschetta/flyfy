@@ -21,9 +21,27 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <div class="container w-full h-full">
+  <body class="overflow-x-hidden bg-white">
+
+    <div class="size-[100%] bg-white/50">
       <%= yield %>
     </div>
+    
+    <!--
+    <script>
+        // Add JavaScript to handle parallax effect on scroll
+        window.addEventListener('scroll', function () {
+            const parallaxElements = 
+                  document.querySelectorAll('.parallax-bg');
+            parallaxElements.forEach(function (element) {
+                let scrollPosition = window.pageYOffset;
+                element.style.transform = 
+                      'translateY(' + scrollPosition * 0.5 + 'px)';
+                              
+            });
+        });
+    </script>
+    -->
+
   </body>
 </html>
